@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Gallery</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha384-o+5dWaAxicpWsXNbxiBxHQNbMq1tRddfYsg5r/6h5cD+KZw3QfmQJdzSik6aFj3E"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!-- <include src="./partials/example.html"></include> -->
-
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
+    <div class="headers-container">
+      <div class="search-container">
+        <form class="search-form js-search-form" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+            class="search-input"
+          />
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </div>
+      <div class="gallery js-gallery list">
+        <div class="gallery-section"></div>
+      </div>
+      <button type="button" class="load-more js-load-more is-hidden">Load more</button>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

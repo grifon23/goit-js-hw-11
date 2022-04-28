@@ -1,0 +1,127 @@
+.search-form {
+  display: flex;
+  width: 320px;
+  height: 40px;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 1px;
+}
+
+.search-input {
+  height: 40px;
+  flex-grow: 1;
+  font-size: 18px;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-btn {
+  padding: 0 20px;
+  height: 40px;
+  outline: none;
+  opacity: 1;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+
+
+.load-more {
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #9E2743;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: #FFFF;
+  border: 1px solid rgba(186, 57, 57, 0.5);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.load-more {
+  display: block;
+  margin: 0 auto;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #FFFF;
+}
+.load-more:hover
+ {
+  background-color: rgba(186, 57, 57, 0.5);
+  border: 1px solid #9E2743;
+}
+
+.gallery,
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.js-gallery {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.gallery-link {
+  margin-top: 20px;
+  margin-left: 20px;
+  min-width: 320px;
+  flex-basis: calc((100% - 80px) / 4);
+  border: 2px solid rgb(241, 238, 238);
+  border-radius: 8px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.photo-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 290px;
+  width: 320px;
+  object-fit: cover;
+}
+
+.gallery-item__img {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  padding: 10px;
+  border-bottom: none;
+  justify-content: space-around;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.info-item:not(:first-child) {
+  margin-left: 5px;
+}
